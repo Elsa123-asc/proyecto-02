@@ -1,3 +1,4 @@
+
 package es.santander.ascender.proyecto02;
 
 /**
@@ -5,8 +6,13 @@ package es.santander.ascender.proyecto02;
  */
 public class App {
     public static void main(String[] args) {
-        Calculadora calculadora = new Calculadora ();
-        long resultado = calculadora.(sumar 4,5)
+        // Crear una instancia de la clase Calculadora
+        Calculadora calculadora = new Calculadora();
+        
+        // Llamar al método sumar usando el objeto calculadora
+        long resultado = calculadora.sumar(4, 5); // Usamos el objeto calculadora y el método sumar
+        
+        // Mostrar el resultado en consola
         System.out.println(resultado);
     }
 }
