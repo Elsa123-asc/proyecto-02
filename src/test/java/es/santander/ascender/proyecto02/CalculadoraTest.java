@@ -3,6 +3,8 @@ package es.santander.ascender.proyecto02;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
+import es.santander.ascender.proyecto02.calculadora;
+
 public class CalculadoraTest {
 
     // Creamos una instancia de la clase Calculadora para usar en las pruebas
@@ -70,4 +72,15 @@ public class CalculadoraTest {
         assertThrows(ArithmeticException.class, () -> calculadora.dividir(dividendo, divisor));
     
     }
+
+    @Test 
+    public void testpresentarTablaMultiplicar () {
+        calculadora.presentarTablaMultiplicar(6);
+    }
+
+    @Test
+    public void testCalcularTablaMultiplicar () {
+        calculadora.calcularTablaMultiplicar(6);
+    }
+
 }
