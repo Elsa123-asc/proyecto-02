@@ -60,13 +60,14 @@ public class CalculadoraTest {
         assertEquals(resultadoEsperado, resultado);
     }
 
-    // Test para la división por cero (debería lanzar una excepción)
+    // Test para la division por cero (debería lanzar una excepcion)
     @Test
     public void testDividirPorCero() {
         long dividendo = 20;
         long divisor = 0;
         
-        // Comprobamos que se lance una excepción ArithmeticException al dividir por cero
+        // Comprobamos que se lance una excepcion ArithmeticException al dividir por cero
         assertThrows(ArithmeticException.class, () -> calculadora.dividir(dividendo, divisor));
+    
     }
 }
