@@ -3,7 +3,6 @@ package es.santander.ascender.proyecto02;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-import es.santander.ascender.proyecto02.calculadora;
 
 public class CalculadoraTest {
 
@@ -83,4 +82,8 @@ public class CalculadoraTest {
         calculadora.calcularTablaMultiplicar(6);
     }
 
+    @Test
+    public void testCalcularTablaMultiplicarConwhile () {
+        calculadora calculadora = new Calculadora ();
+    }
 }
